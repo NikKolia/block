@@ -1,0 +1,115 @@
+@import "fonts"
+@import "colors"
+@import "vars"
+
+.container
+  background-color: $main-bg
+  display: flex
+  flex-wrap: wrap
+  margin-top: 315px
+  max-width: 1600px
+  padding-left: 140px
+  margin-bottom: 1050px
+  justify-content: center
+
+p, a
+  font-family: 'HelveticaNeueCyr', Helvetica, sans-serif
+
+.item
+  border: 1px solid $border
+  background-color: $item-bg
+  margin: 30px 35px 0 0
+  width: 300px
+
+  &_cropp
+    width: 220px
+    height: 220px
+    object-fit: cover
+
+  &:hover
+    cursor: pointer
+    @include box-shadow(0, 0, 5px, 3px, rgba(233, 233, 233, 0.25))
+
+.paddingTop
+  padding-top: 30px
+
+img
+  display: block
+  margin: -17px auto 0 auto
+  padding-left: 28px
+
+.sale, .new
+  border-bottom-right-radius: 25px
+  width: 60px
+  margin: 0
+  text-align: center
+  padding: 8px 0
+
+.sale
+  background-color: $bg-red
+  color: $txt-white
+  font-size: 14px
+  line-height: 16px
+
+.new
+  background-color: $bg-orange
+  color: $txt-new
+  font-size: 12px
+  line-height: 16px
+
+.category
+  color: $txt-grey
+  font-size: 16px
+  padding-left: 17px
+  padding-top: 5px
+  text-transform: uppercase
+
+.title
+  color: $txt-blue
+  font-size: 16px
+  line-height: 21px
+  margin-top: -4px
+  padding-left: 17px
+  text-decoration: underline
+
+.price
+  padding-left: 17px
+
+  p
+    &:first-child
+      color: $txt-grey
+      font-size: 16px
+
+    &:nth-child(2)
+      color: $txt-black
+      font-size: 18px
+      font-weight: 500
+      margin-top: -12px
+
+    span
+      font-size: 10px
+      vertical-align: top
+
+  &_through
+    text-decoration: line-through
+
+.button
+  float: right
+  background-color: $btn-bg
+  border: 1px solid $item-bg
+  color: $btn-text
+  display: block
+  font-size: 15px
+  font-weight: 500
+  margin: -56px 15px 0 0
+  padding: 12px 40px
+  text-decoration: none
+  transition: all 0.2s
+
+  &:hover
+    background-color: lighten($btn-bg, 5%)
+    border: 1px solid $btn-bg
+    color: lighten($btn-text, 20%)
+    text-decoration: none
+
+@import "media"
