@@ -22,11 +22,18 @@
   margin-top: 315px;
   max-width: 1600px;
   padding-left: 140px;
+<<<<<<< HEAD
   padding-right: 125px;
   margin-bottom: 1050px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  margin-bottom: 1050px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> b9f71f07e6c63ba3ffd5aa9aa467d4b1c4914e82
 }
 
 p, a {
@@ -36,8 +43,19 @@ p, a {
 .item {
   border: 1px solid #e2e2e2;
   background-color: #ffffff;
+<<<<<<< HEAD
   margin-top: 30px;
   width: calc((100% - 150px)/5);
+=======
+  margin: 30px 35px 0 0;
+  width: 300px;
+}
+.item_cropp {
+  width: 220px;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> b9f71f07e6c63ba3ffd5aa9aa467d4b1c4914e82
 }
 .item:hover {
   cursor: pointer;
@@ -49,6 +67,7 @@ p, a {
   padding-top: 30px;
 }
 
+<<<<<<< HEAD
 .image {
   padding-bottom: calc(250 / 300 * 100%);
   position: relative;
@@ -63,6 +82,12 @@ img {
   height: calc(250 / 300 * 100%);
   -o-object-fit: contain;
      object-fit: contain;
+=======
+img {
+  display: block;
+  margin: -17px auto 0 auto;
+  padding-left: 28px;
+>>>>>>> b9f71f07e6c63ba3ffd5aa9aa467d4b1c4914e82
 }
 
 .sale, .new {
@@ -91,7 +116,11 @@ img {
   color: #aeaeae;
   font-size: 16px;
   padding-left: 17px;
+<<<<<<< HEAD
   margin-top: -5px;
+=======
+  padding-top: 5px;
+>>>>>>> b9f71f07e6c63ba3ffd5aa9aa467d4b1c4914e82
   text-transform: uppercase;
 }
 
@@ -115,7 +144,11 @@ img {
   color: #272727;
   font-size: 18px;
   font-weight: 500;
+<<<<<<< HEAD
   margin-top: -14px;
+=======
+  margin-top: -12px;
+>>>>>>> b9f71f07e6c63ba3ffd5aa9aa467d4b1c4914e82
 }
 .price p span {
   font-size: 10px;
@@ -146,6 +179,7 @@ img {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1600px) {
   .item {
     width: calc((100% - 120px)/4);
@@ -164,5 +198,10 @@ img {
 @media (max-width: 730px) {
   .item {
     width: calc((100% - 60px));
+=======
+@media (max-width: 845px) {
+  .container {
+    padding-left: 40px;
+>>>>>>> b9f71f07e6c63ba3ffd5aa9aa467d4b1c4914e82
   }
 }
